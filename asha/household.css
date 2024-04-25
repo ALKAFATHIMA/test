@@ -1,0 +1,150 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+}
+
+h1 {
+    font-weight: bold; /* Strong heading style */
+    margin-top: 0;
+}
+
+a, input, button {
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease; /* Smooth transition for interactive elements */
+}
+
+/* Dashboard Styles */
+.dashboard {
+    max-width: 900px; /* Limit maximum width for easier reading */
+    margin: 40px auto; /* Centered with top/bottom margin */
+    padding: 20px;
+    text-align: center; /* Centered text */
+}
+
+#searchBar {
+    width: 70%; /* Large search bar */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for focus effect */
+}
+
+#searchBar:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* No additional outline */
+}
+
+#addHouseButton {
+    padding: 10px 20px; /* Comfortable padding */
+    background-color: #007bff; /* Bootstrap blue */
+    color: white; /* White text on blue */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+#addHouseButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* House Boxes */
+.house-box {
+    background-color: white; /* Clean white background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    margin: 20px 0; /* Spacing between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Indicate interactivity */
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.house-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* House Summary */
+.house-summary {
+    text-align: left; /* Align text to the left */
+}
+
+.house-summary h3 {
+    font-size: 18px; /* Slightly larger font size for emphasis */
+    margin: 0;
+}
+
+.house-summary p {
+    margin: 5px 0; /* Minimal spacing between paragraphs */
+}
+
+/* Overlay (for modal windows) */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full screen */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background with transparency */
+    z-index: 1000; /* Bring it to the front */
+}
+
+/* Form in Overlay */
+.form {
+    background-color: white; /* Clean white form */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 60%; /* Reasonable width for form */
+    margin: 10% auto; /* Centered with top margin */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.close {
+    font-size: 24px; /* Large close icon */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.close:hover {
+    color: red; /* Red color on hover */
+}
+
+/* Member Input Fields */
+.member-input {
+    display: block; /* Flexible layout for fields */
+    gap: 10px; /* Space between inputs */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Spacing between members */
+}
+
+.member-input input,
+.member-input select {
+    flex: 1; /* Each input has equal width */
+    padding: 10px; /* Comfortable padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth focus transition */
+}
+
+.member-input input:focus,
+.member-input select:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* No additional outline */
+}
+
+.member-input .female-fields {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Vertical layout for additional fields */
+    gap: 10px; /* Space between elements */
+}
+
+.member-input .female-fields input {
+    flex: 1; /* Equal width */
+}

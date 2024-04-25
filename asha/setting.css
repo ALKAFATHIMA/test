@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffd2d2, #ffc3c3);
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .sidebar {
+    margin-top: auto; /* Push to bottom */
+  }
+  
+  .back-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .back-button button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #D1B1CB ,#DDCAD9);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .back-button button:hover {
+    background-color: white;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+    
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #D1B1CB ,#DDCAD9); /* Background color for the form */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px; /* Padding for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Projection effect */
+    max-width: 800px;
+    width: 80%;
+    margin:0  auto;
+  }
+  
+  .profile-photo {
+    margin-bottom: 30px;
+  }
+  
+  .profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 0 1 calc(32% - 10px);
+    margin-right: 27px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .form-group:last-child {
+    margin-right: 0;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px; /* Space between label and input */
+  }
+  
+  .form-group input {
+    width: calc(100%- 50px ); /* Adjusted width of input box */
+    padding: 12px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+  }
+  
+  .buttons {
+    margin-top: 30px;
+    text-align: center; /* Center align buttons */
+  }
+  
+  .buttons button {
+    padding: 14px 28px; /* Increased padding for buttons */
+    margin-right: 10px;
+    background: linear-gradient(to bottom, #D1B1CB ,#DDCAD9);
+    border-color: #f66b6b;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:last-child {
+    margin-right: 0;
+  }
+  
+  
+  

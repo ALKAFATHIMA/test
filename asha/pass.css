@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffd2d2, #ffd2d2); /* Background gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .sidebar {
+    margin-top: auto; /* Push to bottom */
+  }
+  
+  .back-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .back-button button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #D1B1CB ,#DDCAD9);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .back-button button:hover {
+    background-color: white;
+  }
+
+  .container {
+    width: 400px;
+    margin:50px auto;
+    margin-top: 0%;
+   margin-left: 600px;
+   
+    padding: 50px;
+    background: linear-gradient(to bottom, #D1B1CB ,#DDCAD9);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .btn button {
+    width: 50%;
+    padding: 10px;
+    background: linear-gradient(to bottom, #414141 ,#000000); 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+  
+  .btn button:hover {
+    background-color: #0056b3;
+  }
+  

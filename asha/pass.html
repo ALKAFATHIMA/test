@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Password</title>
+  <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li><a href="setting.html">View Profile</a></li>
+      <hr class="separator">
+      <li><a href="pass.html">Change Password</a></li>
+      <hr class="separator">
+      <li><a href="register.html">Logout</a></li>
+      <hr class="separator">
+    </ul>
+    <div class="back-button">
+        <button onclick="goToPage('home.html')">Back</button>
+        </div>
+  <div class="container">
+    <h1>Change Password</h1>
+    <form id="change-password-form">
+      <div class="form-group">
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password" placeholder="Enter New Password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm New Password:</label>
+        <input type="password" id="confirm-password" placeholder="Confirm New Password" required>
+      </div>
+      <div class="btn">
+      <button type="submit">Change Password</button>
+    </div>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('change-password-form');
+  
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        const newPassword = document.getElementById('new-password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+  
+        // Perform client-side validation
+        if (newPassword.trim() === '') {
+          alert('Please enter a new password.');
+          return;
+        }
+  
+        if (newPassword.length < 8) {
+          alert('New password must be at least 8 characters long.');
+          return;
+        }
+  
+        // Regular expression to check for presence of special characters
+        const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
+        if (!specialCharRegex.test(newPassword)) {
+          alert('New password must contain at least one special character.');
+          return;
+        }
+  
+        if (newPassword !== confirmPassword) {
+          alert('New password and confirm password do not match.');
+          return;
+        }
+  
+        // If validation passes, display success message
+        alert('Password changed successfully!');
+  
+        // Redirect to previous page
+        window.history.back();
+  
+        // Optionally, you can reset the form after submission
+        form.reset();
+      });
+      
+    });
+
+    function goToPage(pageURL) {
+    window.location.href = pageURL;
+  }
+  </script>
+  
+  
+</body>
+</html>

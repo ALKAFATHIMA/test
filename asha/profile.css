@@ -1,0 +1,60 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0; /* Increase width for more visibility */
+  position: fixed;
+  
+  z-index: 1000; /* Set higher z-index to make it appear in front */
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 192, 203, 0.3); /* Pink with 50% transparency *ency */
+
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.3s ease;
+  display: flex; /* Use flexbox layout */
+  flex-direction: column;
+}
+
+.sidenav a, .sidenav button {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color:rgba(64, 64, 64, 0.8); 
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .sidenav button:hover {
+  color:rgba(0,0,0,0.8);
+}
+
+.sidenav button.closebtn {
+  margin-top: auto; /* Push the button to the bottom */
+  margin-bottom: 1px;
+  padding: 8px 12px; /* Reduce padding for smaller button size */
+  font-size: 16px;
+}
+
+.separator {
+  border-top: 1px solid #777; /* Style the separator line */
+  margin: 10px 0; /* Add margin for separation */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    width: 300px; /* Adjust width for smaller screens */
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

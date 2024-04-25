@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Dashboard</title>
+    <link rel="stylesheet" href="household.css"> <!-- Link to CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>House Dashboard</h1>
+        <input type="text" id="searchBar" placeholder="Search Houses..." oninput="filterHouses()"> <!-- Search bar -->
+        <button id="addHouseButton" onclick="openAddHouseForm()">Add House</button> <!-- Add House button -->
+        <div id="housesList"></div> <!-- Houses list -->
+    </div>
+
+    <div class="overlay" id="addHouseForm"> <!-- Add House form -->
+        <div style="width: 50%;" class="form">
+            <span class="close" style="float: right;" onclick="closeAddHouseForm()">&times;</span> <!-- Close button -->
+            <h2>Add House</h2>
+            <input type="text" id="houseNumber" placeholder="House Number" required>
+            <p><textarea rows="5" style="width: 200px;" id="houseAddress" placeholder="House Address" required></textarea></p>
+            <h3>Members</h3>
+            <div id="membersContainer"></div> <!-- Member inputs -->
+            <button onclick="addMemberInput()">Add Member</button> <!-- Add Member button -->
+            <button onclick="saveHouse()">Save House</button> <!-- Save House button -->
+        </div>
+    </div>
+
+    <div class="overlay" id="houseDetailsModal"> <!-- House Details modal -->
+        <div class="form">
+            <span style="float: right;" class="close" onclick="closeHouseDetailsModal()">&times;</span> <!-- Close button -->
+            <div id="houseDetailsContent"></div> <!-- Content for house details -->
+        </div>
+    </div>
+
+    <script src="household.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
